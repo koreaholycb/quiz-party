@@ -139,5 +139,5 @@ io.on('connection', s => {
     send(r);
   });
 });
-
+require('./solo')(app, { CHO, MOVIE });
 srv.listen(process.env.PORT || 3000, () => console.log('열렸어요 → http://localhost:' + (process.env.PORT || 3000)));
